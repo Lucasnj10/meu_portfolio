@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html{
+  scroll-padding-top: 15vh;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+html,body{
+  height: 100%;
+  background-color: rgba(15, 23, 42, 1);
+}
+
+.header {
+  background-color: rgba(15, 23, 42, 1);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 15vh;
+  position: fixed;
+  z-index: 5;
+}
+
+.titulo {
+  width: 580px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.lista a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.lista a:hover{
+  color: rgba(248, 248, 255, 0.7);
+}
+
+.background {
+  background-color: rgb(15, 23, 42);
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.blur_fundo{
+  width: 300px;
+  height: 300px;
+  background-color: blueviolet;
+  position: fixed;
+  z-index: 0;
+  top: 170px;
+  left: 30px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.8;
+}
+
+.blur_fundo:nth-child(1){
+   width: 300px;
+  height: 300px;
+  background-color: blueviolet;
+  position: fixed;
+  z-index: 0;
+  top: 50px;
+  left: 1100px;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.7;
+}
+
+.div-perfil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 130px;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(138,43,226, 0.3);
+  animation: flutuar 7s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%, 100%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-20px);
+  }
+}
+
+.div-perfil h1 {
+  color: #fff;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.div-perfil h2{
+  color: #fff;
+  z-index: 1;
+}
+
+.div_sobre_mim{
+  width: 87vw;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  margin-top: 70px;
+}
+
+.div-apresentacao {
+  width: 87vw;
+  margin: auto;
+  background-color: rgba(248, 248, 255, 0.2);
+  border-radius: 10px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.div-apresentacao h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.text-apresentacao {
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+}
+
+.div-Titulo_MeusProjetos {
+  width: 87vw;
+  margin: 0 auto;
+}
+
+.div-Titulo_MeusProjetos h3 {
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.carrossel_projetos {
+  max-width:80vw;
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 30px;
+  flex-direction: row;
+  position: relative;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+.carrossel_interno{
+  display: flex;
+  gap: 30px;
+  transform: translateX();
+}
+
+.projeto {
+  border-radius:10px;
+  position: relative;
+  transition: 0.7s;
+  max-height: 100%;
+  min-height: 80%;
+  min-width: 30%;
+  overflow: hidden;
+  display: flex;
+}
+
+.projeto:hover{
+  border: 1px #fff solid;
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+.img_projeto {
+  width: 100%;
+  height:100%;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.descricao_projeto {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(248, 248, 255, 0.7);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 2;
+  color: blueviolet;
+}
+
+.button_voltar{
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 890px;
+  left: 70px;
+  border: none;
+  transform: scaleX(-1);
+  z-index: 2;
+  background-color: transparent;
+}
+
+.button_voltar:hover{
+  cursor: pointer;
+}
+
+.button_proximo{
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 1250px;
+  top: 880px;
+  border: none;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.button_proximo:hover{
+  cursor: pointer;
+}
+
+.button_voltar img{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.projeto:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.div_titulo_tec{
+  width: 87vw;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.div_titulo_tec h2{
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.div_Tecnologias{
+  width: 80vw;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.img_css{
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+  
+}
+
+.img_html{
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+
+}
+
+.img_js{
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+}
+
+.img_physics{
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+
+}
+
+.Titulo_contato{
+  color: #fff;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 27px;
+  position: relative;
+  z-index: 2;
+}
+
+.form input{
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.form textarea{
+  width: 80%;
+  min-height: 90px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-top: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.form button{
+  background-color: blueviolet;
+  border: none;
+  width: 80%;
+  height: 5vh;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.form button:hover{
+  cursor: pointer;
+}
+
+.form{
+  display: flex;
+  width: 50vw;
+  min-height: 35vh;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
