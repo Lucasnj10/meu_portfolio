@@ -12,7 +12,7 @@ const projetos = [
     {id: 1, nome : 'viagens', img : projeto1, link : 'https://lucasnj10.github.io/project-slider-citys-/'},
     {id: 2, nome : 'wikipedia film', img : projeto2, link : 'https://lucasnj10.github.io/project-Fast-and-Furious/'},
     {id: 3, nome : 'cadastro usuario', img : projeto3, link : 'https://cadastro-usuario-hitvyq3hy-lucas-projects-3c376bc6.vercel.app/'},
-    {id: 4, nome : 'Tec Store', img : projeto4, link : 'https://lucasnj10.github.io/Project-Tec-Store/'},
+    {id: 4, nome : 'Tec Store', img : projeto4, link : 'https://lucasnj10.github.io/Project-Tec-Store/'}
 ];
 
 
@@ -32,7 +32,7 @@ function Projetos (){
     };
 
     const botaoanterior = () => {
-        if (index >= 0) {
+        if (index > 0) {
             setindex(index - projetosporpagina);
         }
     };
@@ -42,7 +42,8 @@ function Projetos (){
 
 
     return(
-        <div>
+        <div style={{position:'relative', width:'100vw', height:'20vh'}}>
+        
             <div className='carrossel_projetos'>
             
                 {projetos.slice(index, index + projetosporpagina).map((projeto) => (

@@ -17,7 +17,7 @@ import Forms_Contato from './components/form_contato'
 
 function App() {
   return(
-    <div id='home' className='background'>
+    <div className='background'>
       <div className='blur_fundo'></div>
       <div className='blur_fundo'></div>
       <Header></Header>
