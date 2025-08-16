@@ -68,8 +68,8 @@ html,body{
   background-color: blueviolet;
   position: fixed;
   z-index: 0;
-  top: 30%;
-  left: 0%;
+  top: 50%;
+  right: 80%;
   border-radius: 50%;
   filter: blur(80px);
   opacity: 0.8;
@@ -98,8 +98,8 @@ html,body{
 }
 
 .foto-perfil {
-  width: 200px;
-  height: 200px;
+  width: 17vw;
+  height: 35vh;
   border-radius: 50%;
   margin-top: 130px;
   z-index: 1;
@@ -138,6 +138,7 @@ html,body{
 
 .div-apresentacao {
   width: 87vw;
+  height: 17vh;
   margin: auto;
   background-color: rgba(248, 248, 255, 0.2);
   border-radius: 10px;
@@ -231,7 +232,7 @@ html,body{
   position: absolute;
   width: 40px;
   height: 40px;
-  top: 890px;
+  top: 110px;
   left: 70px;
   border: none;
   transform: scaleX(-1);
@@ -249,7 +250,7 @@ html,body{
   width: 40px;
   height: 40px;
   left: 1250px;
-  top: 880px;
+  top: 110px;
   border: none;
   z-index: 2;
   background-color: transparent;
@@ -272,7 +273,7 @@ html,body{
 .div_titulo_tec{
   width: 87vw;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 17%;
 }
 
 .div_titulo_tec h2{
@@ -326,7 +327,8 @@ html,body{
 }
 
 .form input{
-  width: 80%;
+  width: 85vh;
+  height: 6vh;
   border-radius: 10px;
   border: none;
   background-color: rgba(255, 255, 255, 0.05);
@@ -362,7 +364,7 @@ html,body{
 .form{
   display: flex;
   width: 50vw;
-  min-height: 35vh;
+  min-height: 40vh;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.05);
   justify-content: center;
@@ -441,5 +443,88 @@ html,body{
     top: 10%;
     left: 80%;
     filter: blur(80px);
+  }
+
+  .form{
+    width: 70%;
+    position: relative;
+  }
+
+  .form input{
+    padding: 4%;
+    
+  }
+}
+
+@media(min-width: 451px) and (max-width: 1024px) {
+  .lista a{
+    font-size: 170%;
+  }
+
+  .div-perfil img{
+    margin-top: 27%;
+    width: 35vw;
+    height: 25vh;
+  }
+
+  .div_sobre_mim h2{
+    font-size: 170%;
+  }
+
+  .div-apresentacao{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-apresentacao p{
+    font-size: 130%;
+  }
+  
+  .div-Titulo_MeusProjetos{
+    margin-top: 10%;
+  }
+
+  .carrossel_projetos{
+    width: 80%;
+    height: 70%;
+    
+  }
+
+  .button_voltar{
+    position: absolute;
+    left: 5%;
+    top: 28%;
+  }
+
+  .button_proximo{
+    position: absolute;
+    left: 91%;
+    top: 28%;
+  }
+
+  .div_titulo_tec{
+    margin-top: 0%;
+  }
+
+  .form{
+   min-height: 27vh;
+  
+  }
+
+  .form input{
+    height:4vh;
+    width: 80%;
+  }
+
+  .blur_fundo{
+    right: 87%;
+    filter: blur(100px);
+  }
+
+  .blur_fundo:nth-child(1){
+    left: 80%;
+    filter: blur(100px);
   }
 }
