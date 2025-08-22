@@ -30,18 +30,11 @@ html,body{
   z-index: 5;
 }
 
-.titulo {
-  width: 580px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
 .lista {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 6%;
   cursor: pointer;
   list-style: none;
 }
@@ -59,7 +52,7 @@ html,body{
   background-color: rgb(15, 23, 42);
   width: 100vw;
   min-height: 100vh;
-  padding-bottom: 40px;
+  padding-bottom: 4%;
 }
 
 .blur_fundo{
@@ -93,7 +86,7 @@ html,body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 15%;
   z-index: 1;
 }
 
@@ -101,7 +94,7 @@ html,body{
   width: 17vw;
   height: 35vh;
   border-radius: 50%;
-  margin-top: 130px;
+  margin-top: 10%;
   z-index: 1;
   box-shadow: 0 0 15px rgba(138,43,226, 0.3);
   animation: flutuar 7s ease-in-out infinite;
@@ -119,7 +112,7 @@ html,body{
 
 .div-perfil h1 {
   color: #fff;
-  margin-top: 20px;
+  margin-top: 3%;
   z-index: 1;
 }
 
@@ -133,7 +126,7 @@ html,body{
   margin: auto;
   text-align: center;
   color: #fff;
-  margin-top: 70px;
+  margin-top: 5%;
 }
 
 .div-apresentacao {
@@ -143,22 +136,20 @@ html,body{
   background-color: rgba(248, 248, 255, 0.2);
   border-radius: 10px;
   position: relative;
-  margin-top: 20px;
+  margin-top: 3%;
 }
 
 .div-apresentacao h2 {
   color: #fff;
   text-align: center;
-  margin-top: 50px;
-  padding: 10px;
   position: relative;
   z-index: 2;
 }
 
 .text-apresentacao {
-  margin-top: 20px;
+  margin-top: 3%;
   color: #fff;
-  padding: 20px;
+  padding: 2%;
   width: 100%;
 }
 
@@ -169,7 +160,7 @@ html,body{
 
 .div-Titulo_MeusProjetos h3 {
   color: #fff;
-  margin-top: 50px;
+  margin-top: 5%;
   text-align: center;
   font-size: 30px;
 }
@@ -179,9 +170,9 @@ html,body{
   height: 40vh;
   margin: auto;
   display: flex;
-  gap: 30px;
-  padding: 10px;
-  margin-top: 30px;
+  gap: 3%;
+  padding: 2%;
+  margin-top: 2%;
   flex-direction: row;
   position: relative;
   overflow-x: hidden;
@@ -230,10 +221,10 @@ html,body{
 .button_voltar{
   display: flex;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 110px;
-  left: 70px;
+  width: 3%;
+  height: 32%;
+  top: 85%;
+  left: 5%;
   border: none;
   transform: scaleX(-1);
   z-index: 2;
@@ -247,10 +238,10 @@ html,body{
 .button_proximo{
   display: flex;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 1250px;
-  top: 110px;
+  width: 4%;
+  height: 32%;
+  left: 92%;
+  top: 80%;
   border: none;
   z-index: 2;
   background-color: transparent;
@@ -285,67 +276,66 @@ html,body{
 .div_Tecnologias{
   width: 80vw;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 3%;
   display: flex;
-  gap: 20px;
+  gap: 2%;
 }
 
 .img_css{
   width: 70px;
   height: 70px;
   z-index: 2;
-  
+  object-fit: contain;
 }
 
 .img_html{
   width: 70px;
   height: 70px;
   z-index: 2;
-
+  object-fit: contain;
 }
 
 .img_js{
   width: 70px;
   height: 70px;
   z-index: 2;
+  object-fit: contain;
 }
 
 .img_physics{
   width: 70px;
   height: 70px;
   z-index: 2;
-
+  object-fit: contain;
 }
 
 .Titulo_contato{
   color: #fff;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 6%;
   font-size: 27px;
   position: relative;
   z-index: 2;
 }
 
 .form input{
-  width: 85vh;
+  width: 80%;
   height: 6vh;
   border-radius: 10px;
   border: none;
   background-color: rgba(255, 255, 255, 0.05);
-  margin-top: 10px;
   color: white;
-  padding: 10px;
+  padding: 3%;
 }
 
 .form textarea{
   width: 80%;
-  min-height: 90px;
+  min-height: 15vh;
   border-radius: 10px;
   border: none;
   background-color: rgba(255, 255, 255, 0.05);
-  padding-top: 10px;
   color: white;
-  padding: 10px;
+  padding: 2%;
 }
 
 .form button{
@@ -370,9 +360,9 @@ html,body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 2vh;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 5%;
 }
 
 
@@ -381,7 +371,27 @@ html,body{
     position: fixed;
   }
   .div-perfil img{
+    width: 50%;
+    height: auto;
     margin-top: 47%;
+  }
+
+  .div-perfil{
+    gap: 2vh;
+  }
+
+  .div_sobre_mim{
+    margin-top: 15%;
+  }
+
+  .div-apresentacao{
+    height: 24vh;
+    display:flex ;
+    align-items: center;
+  }
+
+  .div-Titulo_MeusProjetos{
+    margin-top: 20%;
   }
 
   .button_voltar{
@@ -445,14 +455,27 @@ html,body{
     filter: blur(80px);
   }
 
+  .Titulo_contato{
+    margin-top: 20%;
+  }
+
   .form{
+    min-height: 37vh;
     width: 70%;
-    position: relative;
   }
 
   .form input{
     padding: 4%;
-    
+    height: auto;
+  }
+
+  .form textarea{
+    height: 10vh;
+    padding: 3%;
+  }
+
+  .form button{
+
   }
 }
 
